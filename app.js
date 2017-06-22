@@ -106,6 +106,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
 });
 
 function nextPlayer() {
+    
     activePlayer  === 0 ? activePlayer = 1 : activePlayer = 0;
         /* if (activePlayer === 0) {
             activePlayer = 1;
@@ -127,6 +128,7 @@ function nextPlayer() {
 document.querySelector('.btn-new').addEventListener('click', init);
 
 function init() {
+    
     scores = [0,0];
     activePlayer = 0;
     roundScore = 0;  
@@ -147,7 +149,6 @@ function init() {
     document.querySelector('.player-1-panel').classList.remove('active');
     
     document.querySelector('.player-0-panel').classList.add('active');
-    
 }
 
 
